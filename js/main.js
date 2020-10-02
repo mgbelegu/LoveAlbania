@@ -68,12 +68,17 @@
         if(nowSlide >= itemSlide.length) {nowSlide = 0;}
 
         setInterval(function(){
-            $(itemSlide).fadeOut(speed);
-            $(itemSlide[nowSlide]).fadeIn(speed);
+            $(itemSlide).slideUp(speed);
+            $(itemSlide[nowSlide]).slideDown(speed);
             nowSlide++;
             if(nowSlide >= itemSlide.length) {nowSlide = 0;}
         },delay);
     });
+
+    $('#carouselExampleControls').carousel({
+        interval: 3000,
+        cycle: true
+      }); 
 
 
 })(jQuery);
