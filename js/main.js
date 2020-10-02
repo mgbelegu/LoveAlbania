@@ -68,8 +68,8 @@
         if(nowSlide >= itemSlide.length) {nowSlide = 0;}
 
         setInterval(function(){
-            $(itemSlide).slideUp(speed);
-            $(itemSlide[nowSlide]).slideDown(speed);
+            $(itemSlide).fadeOut(speed);
+            $(itemSlide[nowSlide]).fadeIn(speed);
             nowSlide++;
             if(nowSlide >= itemSlide.length) {nowSlide = 0;}
         },delay);

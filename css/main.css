@@ -26,6 +26,15 @@ Primary use:
   src: url('../fonts/Poppins/Poppins-Medium.ttf'); 
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  margin: 0;
+}
+
 /*//////////////////////////////////////////////////////////////////
 [ RS PLUGIN ]*/
 /*---------------------------------------------*/
@@ -223,7 +232,7 @@ Primary use:
 [ Size ]*/
 .size1 {
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
 }
 
 .size2 {
@@ -239,7 +248,7 @@ Primary use:
 /*//////////////////////////////////////////////////////////////////
 [ Width ]*/
 .wsize1 {
-  width: 50%;
+  width: 100%;
 }
 
 .wsize2 {
